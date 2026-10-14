@@ -1,0 +1,6 @@
+{
+  "name": "Investigation Report Builder",
+  "description": "Client-side fraud investigation report generator for Jira with dynamic findings logic, screenshot processing, and instant clipboard export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
