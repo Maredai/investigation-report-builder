@@ -150,24 +150,16 @@ export const CaseDetailsSection: React.FC<CaseDetailsSectionProps> = ({
           {/* Transaction Details */}
           <div>
             <label className="block text-xs font-bold text-black dark:text-neutral-200 mb-1.5">
-              Transaction Details <span className="text-yellow-600 dark:text-yellow-400">*</span>
+              Transaction Details
             </label>
             <textarea
               rows={3}
               value={data.transactionDetails}
               onChange={(e) => onChange({ transactionDetails: e.target.value })}
               placeholder="e.g. ₱5,000 QR transaction at Merchant ABC on October 14, 2026 at 14:22"
-              className={`w-full px-3.5 py-2 text-xs sm:text-sm bg-white dark:bg-neutral-800 rounded-xl border text-black dark:text-white placeholder-neutral-400 dark:placeholder-neutral-500 transition-colors focus:ring-2 focus:ring-yellow-400 focus:border-yellow-500 focus:outline-none ${
-                !data.transactionDetails.trim()
-                  ? 'border-yellow-400 ring-1 ring-yellow-400/40'
-                  : 'border-neutral-300 dark:border-neutral-700'
-              }`}
+              className="w-full px-3.5 py-2 text-xs sm:text-sm bg-white dark:bg-neutral-800 rounded-xl border border-neutral-300 dark:border-neutral-700 text-black dark:text-white placeholder-neutral-400 dark:placeholder-neutral-500 transition-colors focus:ring-2 focus:ring-yellow-400 focus:border-yellow-500 focus:outline-none"
             />
-            {!data.transactionDetails.trim() && (
-              <p className="text-[11px] text-neutral-600 dark:text-neutral-400 mt-1">
-                Required field (describe date, time, amount, and merchant)
-              </p>
-            )}
+
           </div>
         </div>
       )}
