@@ -124,44 +124,40 @@ export const FindingsSection: React.FC<FindingsSectionProps> = ({
         <button
           type="button"
           onClick={() => onSelect('skip')}
-          className={`px-2.5 py-1 rounded-md transition-all ${
-            current === 'skip'
-              ? 'bg-white dark:bg-neutral-900 text-black dark:text-white shadow-xs font-bold border border-neutral-300 dark:border-neutral-600'
-              : 'text-neutral-500 hover:text-black dark:text-neutral-400 dark:hover:text-white'
-          }`}
+          className={`px-2.5 py-1 rounded-md transition-all ${current === 'skip'
+            ? 'bg-white dark:bg-neutral-900 text-black dark:text-white shadow-xs font-bold border border-neutral-300 dark:border-neutral-600'
+            : 'text-neutral-500 hover:text-black dark:text-neutral-400 dark:hover:text-white'
+            }`}
         >
           Skip
         </button>
         <button
           type="button"
           onClick={() => onSelect('yes')}
-          className={`px-2.5 py-1 rounded-md transition-all ${
-            current === 'yes'
-              ? 'bg-yellow-400 text-black shadow-xs font-bold border border-yellow-500'
-              : 'text-neutral-500 hover:text-black dark:text-neutral-400 dark:hover:text-white'
-          }`}
+          className={`px-2.5 py-1 rounded-md transition-all ${current === 'yes'
+            ? 'bg-yellow-400 text-black shadow-xs font-bold border border-yellow-500'
+            : 'text-neutral-500 hover:text-black dark:text-neutral-400 dark:hover:text-white'
+            }`}
         >
           Yes
         </button>
         <button
           type="button"
           onClick={() => onSelect('no')}
-          className={`px-2.5 py-1 rounded-md transition-all ${
-            current === 'no'
-              ? 'bg-black text-white dark:bg-white dark:text-black shadow-xs font-bold border border-black dark:border-white'
-              : 'text-neutral-500 hover:text-black dark:text-neutral-400 dark:hover:text-white'
-          }`}
+          className={`px-2.5 py-1 rounded-md transition-all ${current === 'no'
+            ? 'bg-black text-white dark:bg-white dark:text-black shadow-xs font-bold border border-black dark:border-white'
+            : 'text-neutral-500 hover:text-black dark:text-neutral-400 dark:hover:text-white'
+            }`}
         >
           No
         </button>
         <button
           type="button"
           onClick={() => onSelect('other')}
-          className={`px-2.5 py-1 rounded-md transition-all ${
-            current === 'other'
-              ? 'bg-yellow-300 text-black shadow-xs font-bold border border-yellow-400'
-              : 'text-neutral-500 hover:text-black dark:text-neutral-400 dark:hover:text-white'
-          }`}
+          className={`px-2.5 py-1 rounded-md transition-all ${current === 'other'
+            ? 'bg-yellow-300 text-black shadow-xs font-bold border border-yellow-400'
+            : 'text-neutral-500 hover:text-black dark:text-neutral-400 dark:hover:text-white'
+            }`}
         >
           Other
         </button>
@@ -184,18 +180,16 @@ export const FindingsSection: React.FC<FindingsSectionProps> = ({
               key={opt.id}
               type="button"
               onClick={() => onSelect(opt.id)}
-              className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all border ${
-                isSelected
-                  ? 'bg-yellow-400 text-black border-yellow-500 shadow-xs font-bold'
-                  : 'bg-white dark:bg-neutral-800 text-black dark:text-neutral-200 border-neutral-300 dark:border-neutral-700 hover:border-yellow-400 hover:bg-yellow-50/30'
-              }`}
+              className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all border ${isSelected
+                ? 'bg-yellow-400 text-black border-yellow-500 shadow-xs font-bold'
+                : 'bg-white dark:bg-neutral-800 text-black dark:text-neutral-200 border-neutral-300 dark:border-neutral-700 hover:border-yellow-400 hover:bg-yellow-50/30'
+                }`}
             >
               <span
-                className={`w-3.5 h-3.5 rounded border flex items-center justify-center transition-colors ${
-                  isSelected
-                    ? 'border-black bg-black text-yellow-400'
-                    : 'border-neutral-400 dark:border-neutral-500 bg-white dark:bg-neutral-900'
-                }`}
+                className={`w-3.5 h-3.5 rounded border flex items-center justify-center transition-colors ${isSelected
+                  ? 'border-black bg-black text-yellow-400'
+                  : 'border-neutral-400 dark:border-neutral-500 bg-white dark:bg-neutral-900'
+                  }`}
               >
                 {isSelected && <Check className="w-2.5 h-2.5 stroke-[3]" />}
               </span>
@@ -222,18 +216,16 @@ export const FindingsSection: React.FC<FindingsSectionProps> = ({
               key={opt.id}
               type="button"
               onClick={() => onToggle(opt.id)}
-              className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all border ${
-                isSelected
-                  ? 'bg-yellow-400 text-black border-yellow-500 shadow-xs font-bold'
-                  : 'bg-white dark:bg-neutral-800 text-black dark:text-neutral-200 border-neutral-300 dark:border-neutral-700 hover:border-yellow-400 hover:bg-yellow-50/30'
-              }`}
+              className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all border ${isSelected
+                ? 'bg-yellow-400 text-black border-yellow-500 shadow-xs font-bold'
+                : 'bg-white dark:bg-neutral-800 text-black dark:text-neutral-200 border-neutral-300 dark:border-neutral-700 hover:border-yellow-400 hover:bg-yellow-50/30'
+                }`}
             >
               <span
-                className={`w-3.5 h-3.5 rounded border flex items-center justify-center transition-colors ${
-                  isSelected
-                    ? 'border-black bg-black text-yellow-400'
-                    : 'border-neutral-400 dark:border-neutral-500 bg-white dark:bg-neutral-900'
-                }`}
+                className={`w-3.5 h-3.5 rounded border flex items-center justify-center transition-colors ${isSelected
+                  ? 'border-black bg-black text-yellow-400'
+                  : 'border-neutral-400 dark:border-neutral-500 bg-white dark:bg-neutral-900'
+                  }`}
               >
                 {isSelected && <Check className="w-2.5 h-2.5 stroke-[3]" />}
               </span>
@@ -292,9 +284,8 @@ export const FindingsSection: React.FC<FindingsSectionProps> = ({
           </div>
         </div>
         <ChevronDown
-          className={`w-5 h-5 text-neutral-500 transition-transform duration-200 shrink-0 ${
-            isCollapsed ? '-rotate-90' : 'rotate-0'
-          }`}
+          className={`w-5 h-5 text-neutral-500 transition-transform duration-200 shrink-0 ${isCollapsed ? '-rotate-90' : 'rotate-0'
+            }`}
         />
       </button>
 
@@ -325,11 +316,10 @@ export const FindingsSection: React.FC<FindingsSectionProps> = ({
           <div className="space-y-3.5">
             {/* 1: CREDIT LIMIT UTILIZATION */}
             <div
-              className={`p-3.5 sm:p-4 rounded-xl border transition-all duration-150 ${
-                findings.f1.toggle !== 'skip'
-                  ? 'border-yellow-400 bg-yellow-50/20 dark:bg-yellow-950/15'
-                  : 'border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900'
-              }`}
+              className={`p-3.5 sm:p-4 rounded-xl border transition-all duration-150 ${findings.f1.toggle !== 'skip'
+                ? 'border-yellow-400 bg-yellow-50/20 dark:bg-yellow-950/15'
+                : 'border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900'
+                }`}
             >
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
                 <div>
@@ -363,11 +353,10 @@ export const FindingsSection: React.FC<FindingsSectionProps> = ({
                           value={creditLimit}
                           onChange={(e) => onUpdateCreditLimit(e.target.value)}
                           placeholder="10,000.00"
-                          className={`w-full pl-7 pr-3 py-1.5 text-xs bg-white dark:bg-neutral-800 rounded-lg border font-mono tabular-nums text-black dark:text-white focus:ring-2 focus:ring-yellow-400 focus:border-yellow-500 focus:outline-none ${
-                            !creditLimit.trim()
-                              ? 'border-yellow-400 ring-1 ring-yellow-400/40'
-                              : 'border-neutral-300 dark:border-neutral-700'
-                          }`}
+                          className={`w-full pl-7 pr-3 py-1.5 text-xs bg-white dark:bg-neutral-800 rounded-lg border font-mono tabular-nums text-black dark:text-white focus:ring-2 focus:ring-yellow-400 focus:border-yellow-500 focus:outline-none ${!creditLimit.trim()
+                            ? 'border-yellow-400 ring-1 ring-yellow-400/40'
+                            : 'border-neutral-300 dark:border-neutral-700'
+                            }`}
                         />
                       </div>
                       <p className="text-[10px] text-neutral-500 dark:text-neutral-400 mt-1">
@@ -379,32 +368,26 @@ export const FindingsSection: React.FC<FindingsSectionProps> = ({
                       <label className="block text-xs font-bold text-black dark:text-neutral-200 mb-1">
                         Computed Utilization
                       </label>
-                      <div className="flex items-center h-8 px-3 rounded-lg bg-white dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 text-xs">
+                      <div className="flex items-center h-8 px-3 rounded-lg bg-yellow-400 border border-yellow-500 text-xs">
                         {f1Calc.hasLimit ? (
-                          <span className="font-bold text-black dark:text-yellow-400 font-mono">
+                          <span className="font-bold text-black font-mono">
                             {f1Calc.pctFormatted}% ({formatPesos(f1Calc.total)} of {formatPesos(f1Calc.limit)})
                           </span>
                         ) : (
-                          <span className="text-neutral-500 dark:text-neutral-400 font-medium">
+                          <span className="text-black/60 font-medium">
                             Enter limit to calculate
                           </span>
                         )}
                       </div>
+                      <p className="text-[11px] text-neutral-500 dark:text-neutral-400 mt-1 font-mono">
+                        Sum: {formatPesos(f1Calc.total)} ({f1Calc.transactionCount} {f1Calc.txWord})
+                      </p>
                     </div>
                   </div>
 
                   {/* Status Badges */}
                   <div className="flex flex-wrap items-center gap-2">
-                    {f1Calc.hasLimit ? (
-                      <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-bold bg-yellow-400 text-black border border-yellow-500">
-                        {f1Calc.pctFormatted}% of {formatPesos(f1Calc.limit)} limit
-                      </span>
-                    ) : (
-                      <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-black dark:text-neutral-200 border border-neutral-300 dark:border-neutral-700">
-                        <AlertTriangle className="w-3.5 h-3.5 text-yellow-600 dark:text-yellow-400" />
-                        Enter credit limit above
-                      </span>
-                    )}
+
 
                     {f1Calc.exceedsLimit && (
                       <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-xs font-medium bg-yellow-100 dark:bg-yellow-950/60 text-black dark:text-yellow-200 border border-yellow-300">
@@ -413,10 +396,7 @@ export const FindingsSection: React.FC<FindingsSectionProps> = ({
                       </span>
                     )}
 
-                    <span className="text-xs text-neutral-600 dark:text-neutral-400 font-mono">
-                      Sum: {formatPesos(f1Calc.total)} ({f1Calc.transactionCount}{' '}
-                      {f1Calc.txWord})
-                    </span>
+
                   </div>
 
                   {/* Amounts inputs */}
@@ -468,11 +448,10 @@ export const FindingsSection: React.FC<FindingsSectionProps> = ({
 
             {/* 2: DEVICE MATCH */}
             <div
-              className={`p-3.5 sm:p-4 rounded-xl border transition-all duration-150 ${
-                findings.f2.toggle !== 'skip'
-                  ? 'border-yellow-400 bg-yellow-50/20 dark:bg-yellow-950/15'
-                  : 'border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900'
-              }`}
+              className={`p-3.5 sm:p-4 rounded-xl border transition-all duration-150 ${findings.f2.toggle !== 'skip'
+                ? 'border-yellow-400 bg-yellow-50/20 dark:bg-yellow-950/15'
+                : 'border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900'
+                }`}
             >
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
                 <div>
@@ -585,11 +564,10 @@ export const FindingsSection: React.FC<FindingsSectionProps> = ({
 
             {/* 3: OTHER ACCOUNTS ON DEVICE */}
             <div
-              className={`p-3.5 sm:p-4 rounded-xl border transition-all duration-150 ${
-                findings.f3.toggle !== 'skip'
-                  ? 'border-yellow-400 bg-yellow-50/20 dark:bg-yellow-950/15'
-                  : 'border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900'
-              }`}
+              className={`p-3.5 sm:p-4 rounded-xl border transition-all duration-150 ${findings.f3.toggle !== 'skip'
+                ? 'border-yellow-400 bg-yellow-50/20 dark:bg-yellow-950/15'
+                : 'border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900'
+                }`}
             >
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
                 <div>
@@ -653,11 +631,10 @@ export const FindingsSection: React.FC<FindingsSectionProps> = ({
 
             {/* 4: OTHER DEVICES IN AMPLITUDE */}
             <div
-              className={`p-3.5 sm:p-4 rounded-xl border transition-all duration-150 ${
-                findings.f4.toggle !== 'skip'
-                  ? 'border-yellow-400 bg-yellow-50/20 dark:bg-yellow-950/15'
-                  : 'border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900'
-              }`}
+              className={`p-3.5 sm:p-4 rounded-xl border transition-all duration-150 ${findings.f4.toggle !== 'skip'
+                ? 'border-yellow-400 bg-yellow-50/20 dark:bg-yellow-950/15'
+                : 'border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900'
+                }`}
             >
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
                 <div>
@@ -699,16 +676,15 @@ export const FindingsSection: React.FC<FindingsSectionProps> = ({
 
             {/* 5: FIRST TRANSACTION DISTANCE */}
             <div
-              className={`p-3.5 sm:p-4 rounded-xl border transition-all duration-150 ${
-                findings.f5.toggle !== 'skip'
-                  ? 'border-yellow-400 bg-yellow-50/20 dark:bg-yellow-950/15'
-                  : 'border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900'
-              }`}
+              className={`p-3.5 sm:p-4 rounded-xl border transition-all duration-150 ${findings.f5.toggle !== 'skip'
+                ? 'border-yellow-400 bg-yellow-50/20 dark:bg-yellow-950/15'
+                : 'border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900'
+                }`}
             >
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
                 <div>
                   <span className="text-xs sm:text-sm font-bold text-black dark:text-white">
-                    Did the first transaction occur outside the client's usual vicinity?
+                    Did the transaction occur outside the client's usual vicinity?
                   </span>
                 </div>
                 {renderToggle(findings.f5.toggle, (val) =>
@@ -798,11 +774,10 @@ export const FindingsSection: React.FC<FindingsSectionProps> = ({
 
             {/* 6: PAYMENT ATTEMPT */}
             <div
-              className={`p-3.5 sm:p-4 rounded-xl border transition-all duration-150 ${
-                findings.f6.toggle !== 'skip'
-                  ? 'border-yellow-400 bg-yellow-50/20 dark:bg-yellow-950/15'
-                  : 'border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900'
-              }`}
+              className={`p-3.5 sm:p-4 rounded-xl border transition-all duration-150 ${findings.f6.toggle !== 'skip'
+                ? 'border-yellow-400 bg-yellow-50/20 dark:bg-yellow-950/15'
+                : 'border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900'
+                }`}
             >
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
                 <div>
@@ -822,11 +797,10 @@ export const FindingsSection: React.FC<FindingsSectionProps> = ({
 
             {/* 7: ACCOUNT STATUS (POS LOAN, CASH LOAN, SKYRO CREDIT) */}
             <div
-              className={`p-3.5 sm:p-4 rounded-xl border transition-all duration-150 ${
-                findings.f7.toggle !== 'skip'
-                  ? 'border-yellow-400 bg-yellow-50/20 dark:bg-yellow-950/15'
-                  : 'border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900'
-              }`}
+              className={`p-3.5 sm:p-4 rounded-xl border transition-all duration-150 ${findings.f7.toggle !== 'skip'
+                ? 'border-yellow-400 bg-yellow-50/20 dark:bg-yellow-950/15'
+                : 'border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900'
+                }`}
             >
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
                 <div>
@@ -998,11 +972,10 @@ export const FindingsSection: React.FC<FindingsSectionProps> = ({
 
             {/* 8: CLIENT CONTACT */}
             <div
-              className={`p-3.5 sm:p-4 rounded-xl border transition-all duration-150 ${
-                findings.f8.toggle !== 'skip'
-                  ? 'border-yellow-400 bg-yellow-50/20 dark:bg-yellow-950/15'
-                  : 'border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900'
-              }`}
+              className={`p-3.5 sm:p-4 rounded-xl border transition-all duration-150 ${findings.f8.toggle !== 'skip'
+                ? 'border-yellow-400 bg-yellow-50/20 dark:bg-yellow-950/15'
+                : 'border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900'
+                }`}
             >
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
                 <div>
@@ -1119,11 +1092,10 @@ export const FindingsSection: React.FC<FindingsSectionProps> = ({
 
             {/* 9: RECIPIENT */}
             <div
-              className={`p-3.5 sm:p-4 rounded-xl border transition-all duration-150 ${
-                findings.f9.toggle !== 'skip'
-                  ? 'border-yellow-400 bg-yellow-50/20 dark:bg-yellow-950/15'
-                  : 'border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900'
-              }`}
+              className={`p-3.5 sm:p-4 rounded-xl border transition-all duration-150 ${findings.f9.toggle !== 'skip'
+                ? 'border-yellow-400 bg-yellow-50/20 dark:bg-yellow-950/15'
+                : 'border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900'
+                }`}
             >
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
                 <div>
